@@ -27,7 +27,7 @@ class _IconsViewState extends State<IconsView> {
       return 4;
     }
 
-    if (width > 300) {
+    if (width > 400) {
       return 3;
     }
 
