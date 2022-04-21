@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fluttericonsbrowser/iconsview.dart';
 
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
@@ -68,13 +68,7 @@ class HomePage extends StatelessWidget {
               Container(
                 margin: const EdgeInsets.only(top: 60),
                 width: calculateWidth(context),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SearchBar(key: searchBar),
-                    const Text("TODO: Add CMD+K shortcut"),
-                  ],
-                ),
+                child: const IconsView(),
               )
             ],
           )

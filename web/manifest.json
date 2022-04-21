@@ -1,11 +1,11 @@
 {
-    "name": "fluttericonsbrowser",
-    "short_name": "fluttericonsbrowser",
+    "name": "Flutter Icons Browser",
+    "short_name": "Icons Browser",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Browse flutter icons.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

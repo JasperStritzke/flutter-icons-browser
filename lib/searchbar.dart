@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SearchBar extends StatefulWidget {
-  const SearchBar({Key? key}) : super(key: key);
+  final ValueChanged onChange;
+  const SearchBar({Key? key, required this.onChange}) : super(key: key);
 
   @override
   State<SearchBar> createState() => SearchBarState();
@@ -34,6 +35,7 @@ class SearchBarState extends State<SearchBar> {
           color: Colors.white,
           border: Border.all(color: const Color(0x1C000000), width: 1)),
       child: TextField(
+        onChanged: widget.onChange,
         controller: editingController,
         focusNode: focusNode,
         textAlignVertical: TextAlignVertical.center,
@@ -52,13 +54,6 @@ class SearchBarState extends State<SearchBar> {
           suffixIcon: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              SvgPicture.asset(
-                "command.svg",
-                height: 20,
-                width: 20,
-              ),
-            ],
           ),
           hintText: "Search by icon variable name...",
         ),
