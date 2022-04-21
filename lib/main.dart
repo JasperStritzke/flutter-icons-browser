@@ -43,34 +43,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF2F2F2),
-      body: Stack(
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Positioned(
-            bottom: 30,
-            left: 0,
-            right: 0,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                Text(
-                  "developed by Jasper S",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 14,
-                  ),
-                )
-              ],
-            ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                margin: const EdgeInsets.only(top: 60),
-                width: calculateWidth(context),
-                child: const IconsView(),
-              )
-            ],
+          Container(
+            margin: const EdgeInsets.only(top: 60),
+            width: calculateWidth(context),
+            child: const IconsView(),
           )
         ],
       ),
