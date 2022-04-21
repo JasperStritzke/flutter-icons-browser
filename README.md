@@ -1,5 +1,5 @@
 # fluttericonsbrowser
 
-This flutter web app allows you to browse flutters builtin material icons.
+A simple browser for flutters builtin material icons.
 
 ### [Link: flutter-material-icons.netlify.com](https://flutter-material-icons.netlify.com)
